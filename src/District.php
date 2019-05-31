@@ -6,9 +6,9 @@
  * @copyright IPIP.net
  */
 
-namespace ipip\db;
+namespace Baixing\ChibiTools;
 
-class IDC
+class District
 {
     public $reader = NULL;
 
@@ -35,6 +35,6 @@ class IDC
             return NULL;
         }
 
-        return new IDCInfo($map);
+        return new DistrictInfo($map);
     }
 }

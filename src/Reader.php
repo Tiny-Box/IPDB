@@ -6,7 +6,7 @@
  * @copyright IPIP.net
  */
 
-namespace ipip\db;
+namespace Baixing\ChibiTools;
 
 class Reader
 {

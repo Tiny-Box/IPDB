@@ -1,5 +1,5 @@
 {
-    "name": "ipip/db",
+    "name": "chibitools/ip",
     "type": "library",
     "description": "IPIP.net officially supported IP database ipdb format parsing library",
     "keywords": ["ipip.net","geoip","geolocation", "geo","ip","ipdb"],
@@ -15,9 +15,10 @@
     "require": {
         "php": ">=5.4.0"
     },    
+    "require-dev": {
+      "phpunit/phpunit": "^4.8"
+    },
     "autoload": {
-        "psr-4": {
-            "ipip\\db\\": "src/ipip/db/"
-        }
+        "psr-4": {"Baixing\\ChibiTools\\": "src/"}
     }
 }

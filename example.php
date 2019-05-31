@@ -4,14 +4,14 @@ ini_set('memory_limit', '2G');
 
 function __autoload($class)
 {
-    if (strpos($class, 'ipip\db') !== FALSE)
+    if (strpos($class, 'Baixing\ChibiTools') !== FALSE)
     {
         require_once __DIR__ . '/src/' . implode(DIRECTORY_SEPARATOR, explode('\\', $class)) . '.php';
     }
 }
 
 // 全球 IPv6 地级市精度离线库（China：每周高级版，每日标准版，每日高级版，每日专业版，每日旗舰版）
-$res = ipip\db\Api::getCityCNName('103.96.215.197');
+$res = Baixing\ChibiTools\Api::getCityCNName('103.96.215.197');
 var_dump($res);
 // $city = new ipip\db\City('c:\work\ipdb\city.ipv6.ipdb');
 //var_dump($city->find('2001:250:200::', 'CN'));

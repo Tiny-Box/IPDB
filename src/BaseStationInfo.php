@@ -6,18 +6,16 @@
  * @copyright IPIP.net
  */
 
-namespace ipip\db;
+namespace Baixing\ChibiTools;
 
-class DistrictInfo
+class BaseStationInfo
 {
-    public $country_name     = '';
-    public $region_name      = '';
-    public $city_name        = '';
-    public $district_name    = '';
-    public $china_admin_code = '';
-    public $covering_radius  = '';
-    public $longitude        = '';
-    public $latitude         = '';
+    public $country_name = '';
+    public $region_name  = '';
+    public $city_name    = '';
+    public $owner_domain = '';
+    public $isp_domain   = '';
+    public $base_station = '';
 
     public function __construct(array $data)
     {
